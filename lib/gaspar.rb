@@ -119,7 +119,7 @@ module Gaspar
       end
       opts.push("-t #{@type}")
 
-      @options.each |k, v| do 
+      @options.each do |k, v|
         opts.push "#{k} #{v}"
       end 
 
