@@ -119,6 +119,10 @@ module Gaspar
       end
       opts.push("-t #{@type}")
 
+      @options.each |k, v| do 
+        opts.push "#{k} #{v}"
+      end 
+
       opts.join(' ')
     end
 
